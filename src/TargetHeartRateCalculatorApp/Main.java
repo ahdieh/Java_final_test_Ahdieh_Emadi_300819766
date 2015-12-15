@@ -1,4 +1,4 @@
-package Target-Heart-Rate_CalculatorApp;
+package TargetHeartRateCalculatorApp;
 	
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -12,7 +12,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			GridPane root = (GridPane)FXMLLoader.load(getClass().getResource("Target-Heart-Rate_CalculatorApp.fxml"));
+			GridPane root = (GridPane)FXMLLoader.load(getClass().getResource("TargetHeartRateCalculatorApp.fxml"));
 			Scene scene = new Scene(root,400,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);

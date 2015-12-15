@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane fx:id="#GridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  
+   <children>
+   <!--  ImageView -->
+      <ImageView fx:id="#imageView" fitHeight="150.0" fitWidth="601.0" 
+      pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" 
+      GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+      
+      <Label fx:id="TitleLabel" prefHeight="94.0" prefWidth="598.0" 
+      text="TargetHeartRate" GridPane.columnSpan="2" 
+      GridPane.columnIndex="1" GridPane.rowIndex="0">
+         <font>
+            <Font name="System Bold Italic" size="65.0" />
+         </font>
+      </Label>
+      
+      <TextField fx:id="#MyAgeTextField" 
+      GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      
+      <RadioButton fx:id="#FemaleRadioButton" 
+      onAction="#ChangeBackgroundColorPinkHandler"
+      mnemonicParsing="false" selected="true"
+      onAction="#InsertButtonHandler" 
+      text="Female" 
+      GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      
+      <RadioButton fx:id="#MaleRadioButton" 
+      layoutX="10.0" layoutY="330.0" mnemonicParsing="false" 
+      text="Male" 
+      onAction="#ChangeBackgroundColorBlueHandler"
+      GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      
+      <Label fx:id="#MyAgeLabel" prefHeight="27.0" prefWidth="146.0" text="My Age" 
+      GridPane.columnIndex="0" GridPane.rowIndex="3"  />
+      
+      <Button fx:id="#CalculateButton" mnemonicParsing="false" 
+      text="Calculate" 
+      GridPane.columnIndex="0" GridPane.rowIndex="4"  />
+      
+      <TableView fx:id="#TableView" 
+      editable="true" 
+      prefHeight="57.0" prefWidth="582.0" 
+      GridPane.columnSpan="2" 
+      GridPane.columnIndex="0" GridPane.rowIndex="5" >
+        <columns>
+          <TableColumn prefWidth="75.0" text="Age" />
+          <TableColumn prefWidth="227.0" text="target-heart-raterange" />
+            <TableColumn prefWidth="227.0" text="maximumheartrate" />
+        </columns>
+     
+      </TableView>
+   </children>
+</GridPane>
